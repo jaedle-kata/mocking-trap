@@ -8,17 +8,18 @@ import java.util.HashSet;
 
 import static org.junit.Assert.assertEquals;
 
-public class NameRepositoryTest {
+public class VerySlowNameRepositoryTest {
+
     @Test
     public void isInitiallyEmpty() {
-        NameRepository nameRepository = new NameRepository();
+        VerySlowNameRepository nameRepository = new VerySlowNameRepository();
         assertEquals(0, nameRepository.size());
         assertEquals(Collections.emptySet(), nameRepository.getAll());
     }
 
     @Test
     public void addOneNameAtATime() {
-        NameRepository nameRepository = new NameRepository();
+        VerySlowNameRepository nameRepository = new VerySlowNameRepository();
 
         nameRepository.add("John");
         nameRepository.add("Ben");
@@ -29,7 +30,7 @@ public class NameRepositoryTest {
 
     @Test
     public void addMultipleNameAtATime() {
-        NameRepository nameRepository = new NameRepository();
+        VerySlowNameRepository nameRepository = new VerySlowNameRepository();
 
         nameRepository.addAll(new HashSet<>(Arrays.asList("John", "Ben")));
         nameRepository.addAll(new HashSet<>(Arrays.asList("Adam", "Sven")));
@@ -40,7 +41,7 @@ public class NameRepositoryTest {
 
     @Test
     public void isUnique() {
-        NameRepository nameRepository = new NameRepository();
+        VerySlowNameRepository nameRepository = new VerySlowNameRepository();
 
         nameRepository.add("John");
         nameRepository.add("John");
