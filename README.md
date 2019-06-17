@@ -8,9 +8,6 @@ Write a Parser that parses strings with given names and adds the first name to a
 
 ### Class
 Name `NameImporter`
-```Java
-
-```
 
 ### Sample Inputs
 ```txt

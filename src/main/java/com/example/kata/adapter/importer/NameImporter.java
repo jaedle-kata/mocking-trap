@@ -1,4 +1,4 @@
-package com.example.kata.adapter.importer
+package com.example.kata.adapter.importer;
 
 public class NameImporter {
 
